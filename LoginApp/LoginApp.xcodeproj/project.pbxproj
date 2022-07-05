@@ -14,6 +14,11 @@
 		227CB0FA2870758D00B57645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227CB0F82870758D00B57645 /* Main.storyboard */; };
 		227CB0FC2870759400B57645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227CB0FB2870759400B57645 /* Assets.xcassets */; };
 		227CB0FF2870759400B57645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227CB0FD2870759400B57645 /* LaunchScreen.storyboard */; };
+		22C4D465287466BB0040A2DE /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C4D464287466BB0040A2DE /* Person.swift */; };
+		22C4D4672874690F0040A2DE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C4D4662874690F0040A2DE /* User.swift */; };
+		22C4D46928746EAA0040A2DE /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C4D46828746EAA0040A2DE /* BioViewController.swift */; };
+		22C4D46B28746EC60040A2DE /* DatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C4D46A28746EC60040A2DE /* DatesViewController.swift */; };
+		22C4D46E28746EE70040A2DE /* TravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C4D46D28746EE70040A2DE /* TravelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		227CB0FB2870759400B57645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		227CB0FE2870759400B57645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		227CB1002870759400B57645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22C4D464287466BB0040A2DE /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		22C4D4662874690F0040A2DE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		22C4D46828746EAA0040A2DE /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
+		22C4D46A28746EC60040A2DE /* DatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesViewController.swift; sourceTree = "<group>"; };
+		22C4D46D28746EE70040A2DE /* TravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +68,61 @@
 		227CB0F12870758D00B57645 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				227CB0F22870758D00B57645 /* AppDelegate.swift */,
-				227CB0F42870758D00B57645 /* SceneDelegate.swift */,
-				227CB0F62870758D00B57645 /* LoginViewController.swift */,
-				2243855028722294006CB8DB /* WelcomeViewController.swift */,
-				227CB0F82870758D00B57645 /* Main.storyboard */,
-				227CB0FB2870759400B57645 /* Assets.xcassets */,
-				227CB0FD2870759400B57645 /* LaunchScreen.storyboard */,
-				227CB1002870759400B57645 /* Info.plist */,
+				22C4D45F28745DA60040A2DE /* App */,
+				22C4D46028745DD90040A2DE /* ViewControllers */,
+				22C4D463287466450040A2DE /* Models */,
+				22C4D46128745E0F0040A2DE /* Storyboards */,
+				22C4D46228745E300040A2DE /* Resourses */,
 			);
 			path = LoginApp;
+			sourceTree = "<group>";
+		};
+		22C4D45F28745DA60040A2DE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				227CB0F22870758D00B57645 /* AppDelegate.swift */,
+				227CB0F42870758D00B57645 /* SceneDelegate.swift */,
+				227CB1002870759400B57645 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		22C4D46028745DD90040A2DE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				227CB0F62870758D00B57645 /* LoginViewController.swift */,
+				2243855028722294006CB8DB /* WelcomeViewController.swift */,
+				22C4D46828746EAA0040A2DE /* BioViewController.swift */,
+				22C4D46A28746EC60040A2DE /* DatesViewController.swift */,
+				22C4D46D28746EE70040A2DE /* TravelViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		22C4D46128745E0F0040A2DE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				227CB0F82870758D00B57645 /* Main.storyboard */,
+				227CB0FD2870759400B57645 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		22C4D46228745E300040A2DE /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				227CB0FB2870759400B57645 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		22C4D463287466450040A2DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22C4D464287466BB0040A2DE /* Person.swift */,
+				22C4D4662874690F0040A2DE /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +196,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C4D46E28746EE70040A2DE /* TravelViewController.swift in Sources */,
+				22C4D46B28746EC60040A2DE /* DatesViewController.swift in Sources */,
+				22C4D46928746EAA0040A2DE /* BioViewController.swift in Sources */,
+				22C4D465287466BB0040A2DE /* Person.swift in Sources */,
 				227CB0F72870758D00B57645 /* LoginViewController.swift in Sources */,
+				22C4D4672874690F0040A2DE /* User.swift in Sources */,
 				2243855128722294006CB8DB /* WelcomeViewController.swift in Sources */,
 				227CB0F32870758D00B57645 /* AppDelegate.swift in Sources */,
 				227CB0F52870758D00B57645 /* SceneDelegate.swift in Sources */,
@@ -290,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CF493G83QH;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CF493G83QH;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
